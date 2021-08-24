@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/estilos.css" />
+
+    <style>
+      A:link {color: white; text-decoration: none;}
+      A:hover {color: white; text-decoration: none;}
+      A:visited {color: white; text-decoration: none;}
+    </style>
+
+    <title>3ra ENTREGA - GABRIELA LUPIDI</title>
+  </head>
+  <body background="../multimedia/fondo.jpg">
+    <div>
+      <!--BARRA DE MENÚ-->
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../views/categorias.html">Categorías</a></li>
+          <li><a href="../views/trivia.html">Trivia</a></li>
+        </ul>
+        <!--LOGO DEL MENÚ-->
+        <div class="logo">
+          <span style="--l: 'C'">C</span>
+          <span style="--l: 'I'">I</span>
+          <span style="--l: 'N'">N</span>
+          <span style="--l: 'E'">E</span>
+          <span style="--l: 'T'">T</span>
+          <span style="--l: 'E'">E</span>
+          <span style="--l: 'C'">C</span>
+          <span style="--l: 'A'">A</span>
+        </div>
+        <ul class="menu2">
+          <li><a href="../views/usuarios.html">Ingresar</a></li>
+          <li><a href="../views/usuarios.html">Registrarse</a></li>
+        </ul>
+      </nav>
+    </div>
+      <!--VOTACIÓN DE PELÍCULAS-->
+    <section>
+      <div>
+        <div>
+          <h2 class="textoPrincipal">
+            <strong
+              >EN <span> CINETECA </span> NOS ESTAMOS PREGUNTANDO: <br />*
+              CUÁLES SON LAS MEJORES 10 PELÍCULAS DE LA HISTORIA? <br />*
+              QUIÉNES SON LOS DIRECTORES MÁS TRASCENDENTES DEL CINE? <br />* QUE
+              PAÍSES PRODUCEN MEJORES PELÍCULAS? <br />* CUÁLES SON LOS GÉNEROS
+              MÁS ELEGIDOS?</strong
+            >
+            <br />Quéres participar de la votación? Solo tenés que iniciar
+            sesión con tu usuario y completar el siguiente formulario ingresando
+            tu top 5 de películas:
+          </h2>
+          <form action="" autocomplete="off" class="formEstilo">
+            <div class="estiloFormulario">
+              <label for="pelicula" class="categoríasForm">PELÍCULA</label>
+              <input
+                type="text"
+                name="pelicula"
+                id="pelicula"
+                placeholder="Película"
+                class="tamanioInput"
+              />
+            </div>
+            <div class="estiloFormulario">
+              <label for="director" class="categoríasForm">DIRECTOR/A</label>
+              <input
+                type="text"
+                name="director"
+                id="director"
+                placeholder="Director/a"
+                class="tamanioInput"
+              />
+            </div>
+            <div class="estiloFormulario">
+              <label for="pais" class="categoríasForm">PAÍS</label>
+              <input
+                type="text"
+                name="pais"
+                id="pais"
+                placeholder="País"
+                class="tamanioInput"
+              />
+            </div>
+            <div class="estiloFormulario">
+              <label for="genero" class="categoríasForm">GÉNERO</label>
+              <input
+                type="text"
+                name="genero"
+                id="genero"
+                placeholder="Género"
+                class="tamanioInput"
+              />
+            </div>
+            <br />
+            <button id="cargar" class="btnCargar">CARGAR PELÍCULA</button>
+          </form>
+        </div>
+        <br />
+        <div>
+          <br />
+          <h2 class="tituloSecundario">TUS PELÍCULONES:</h2>
+          <table id="tablaPeliculas" class="tablaPeliculas">
+            <tr>
+              <th class="col-1">N°</th>
+              <th class="col-2">Película</th>
+              <th class="col-2">Director/a</th>
+              <th class="col-2">País</th>
+              <th class="col-2">Género</th>
+              <th class="col-2">Borrar</th>
+            </tr>
+          </table>
+        </div>
+        <p class="parrafoFinal">
+          No dejes pasar esta oportunidad de ser parte de la historia grande del
+          cine! <br />
+          El 14 de Septiembre vamos a estar subiendo los resultados!
+        </p>
+      </div>
+    </section>
+    <!--PIE DE PÁGINA-->
+    <footer>PROYECTO FINAL - JAVASCRIPT - GABRIELA LUPIDI</footer>
+
+    <script src="../assets/js/votacion.js"></script>
+  </body>
+</html>

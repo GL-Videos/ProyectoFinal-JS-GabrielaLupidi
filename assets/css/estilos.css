@@ -1,0 +1,1003 @@
+/*-------------------------------------------------CSS GENERICO------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Prompt', sans-serif;
+    }
+
+body {
+    color: white;
+    list-style: none;
+    list-style-type: none;
+    
+}
+
+/*Menú*/
+
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 20px;
+}
+
+.menu li a {
+    margin-top: 20px;
+    padding-right: 20px;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.menu2 {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 40px;
+}
+
+.menu2 li a {
+    margin-top: 20px;
+    padding-right: 20px;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    transition: all 300ms ease-in-out;
+    filter: contrast(100%);
+    border-radius: 20px;
+    padding: 0 15px 0 15px;
+    
+}
+
+.logo span::before {
+    content: var(--l);
+    position: absolute;
+    filter: blur(15px);
+}
+
+.logo span::after {
+    content: var(--l);
+    position: absolute;
+    filter: blur(40px);
+    top: 60%;
+}
+
+.logo span:nth-child(1) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(2) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(3) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(4) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(5) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(6) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(7) {
+    color: rgb(149, 216, 255);
+}
+.logo span:nth-child(8) {
+    color: rgb(149, 216, 255);
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+aside a img {
+    display: flex;
+    margin: 80px 0 80px 0;
+    border-radius: 20px;
+}
+
+footer {
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*------------------------------------------------GALERIA INDEX---------------------------------------------------------------*/
+
+.contenedorGeneral {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 20px 50px 20px;
+    justify-content: center;
+    background-color: #34495ebe;
+    border: #34495E solid 10px;
+    border-radius: 20px;
+    padding: 30px 0 30px 0;
+}
+
+.tituloIndex {
+    font-size: 30pt;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenedorPeliculas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.caratulas img {
+    display: flex;
+    width: 150px;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#parrafoRegistro {
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 600;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+}
+
+#btnRegistro {
+    color: white;
+    background-color: #34495E;
+    border-radius: 5px;
+    font-size: 15pt;
+    font-weight: 500;
+    margin-left: 600px;
+}
+
+#confirmarRegistro {
+    font-size: 20pt;
+    font-weight: 500;
+    margin-left: 550px;
+    margin-bottom: 100px;
+    text-shadow: rgb(27, 27, 27) 3px 3px;
+}
+
+
+/*-----------------------------------------------CSS TRIVIA------------------------------------------------------------------- */
+
+
+
+.contenedor {
+	width: 430px;
+	margin: 50px auto;
+	height: 100%;
+	padding-top: 0px;
+  }
+  
+  #trivia {
+	background-color: #34495E;
+	padding-bottom: 60px;
+	width: 100%;
+	border-radius: 2%;
+	color: #fff;
+	text-align: center;
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  #trivia > h1 {
+	text-align: center;
+	padding-top: 25px;
+	font-size: 25px;
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+  }
+  
+  .pregunta {
+	font-size: 28px;
+	font-weight: 700;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 20px;
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+  }
+  
+  .respuesta div {
+	padding: 10px 0 0 0;
+	font-size: 20px;
+  }
+  
+  .respuesta div:hover {
+	cursor: pointer;
+	color: #68a7f0;
+  }
+  
+  .respuesta {
+	padding: 0px 0 10px 0px;
+    text-shadow: rgb(27, 27, 27) 2px 2px;
+  }
+  
+  .respuesta div {
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	border-top: 1px solid grey;
+  }
+  
+  .respuesta div:first-child {
+	border: none;
+  }
+  
+  .chequeo {
+	display: inline-block;
+	width: 200px;
+	margin: 0 auto;
+  }
+  
+  .correcta, .falsa {
+	background-color: #109D59;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 4px;
+	float: left;
+	margin-left: 2px;
+	margin-top: 2px;
+  }
+  
+  .falsa {
+	background-color: #DC4437;
+  }
+
+
+  /*-----------------------------------------------CSS VOTACIÓN-----------------------------------------------------------*/
+
+.estiloFormulario {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%;
+  }
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+
+.textoPrincipal{
+    color: white;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    font-size: 20pt;
+    margin: 50px 0 30px 30px;
+}
+
+.textoPrincipal span {
+    font-size: 25pt;
+    color: rgb(149, 216, 255);
+}
+
+.formEstilo {
+    margin: 30px;
+    font-weight: bold;
+}
+
+.categoríasForm {
+    color: white;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    margin: 10px;
+}
+
+.tamanioInput{
+    border: #34495E solid 3px;
+    width: 700px;
+    height: 40px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.btnCargar {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #34495E;
+    outline: none;
+}
+
+.tituloSecundario {
+    color: white;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    font-size: 20pt;
+    font-weight: 600;
+    margin: 30px;
+    text-align: center;
+}
+
+.tablaPeliculas {
+    border: #34495E solid 3px;
+    background-color: #8da8c4;
+    margin: 50px 0 100px 20px;
+    text-align: center;
+}
+
+.tablaPeliculas tr th {
+    border: #34495E solid 3px;
+    padding: 10px;
+    color: #34495E;
+}
+
+.respuestas {
+    color: rgb(48, 48, 48);
+}
+
+.botonBorrar {
+    border-radius: 15px;
+    color: white;
+    background-color: #34495E;
+    padding: 5px;
+}
+
+.parrafoFinal {
+    color: white;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    font-size: 20pt;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+
+/*-------------------------------------------CSS CATEGORIAS-----------------------------------------------*/
+
+.listaCategorias {
+    text-align: center;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    margin: 100px 0 100px 470px;
+    color: white;
+    justify-content: center;
+    background-color: #34495ebe;
+    border: #34495E solid 10px;
+    border-radius: 20px;
+}
+
+.listaCategorias a {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 15px 0;
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: rgb(39, 39, 39) 3px 3px;
+    width: 150px;
+    margin-left: 100px;
+}
+
+.btnCategoriaPelis {
+    font-size: 15pt;
+    font-weight: 500;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #54687c;
+    text-shadow: rgb(39, 39, 39) 2px 2px;
+}
+
+.btnCategoriaSeries {
+    font-size: 15pt;
+    font-weight: 500;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #54687c;
+    text-shadow: rgb(39, 39, 39) 2px 2px;
+}
+
+
+/*--------------------------------------------CATEGORÍAS GÉNERO-----------------------------------------------------------------*/
+
+.titulosGeneros {
+    margin: 100px 0 50px 0;
+    text-align: center;
+    text-shadow: rgb(39, 39, 39) 2px 2px;
+}
+
+.categoriasGenero {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contenedorGenero {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+}
+
+.textoGenero {
+    font-size: 25px;
+    text-shadow: rgb(39, 39, 39) 2px 2px;
+    margin: 50px 0 10px 20px;
+}
+
+.caratulasGenero {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    padding-left: 10px;
+    border: #34495E solid 8px;
+    background-color: #34495ec4;
+    width: 97%;
+    height: 250px;
+}
+
+.caratulasGenero img {
+    width: 150px;
+    height: 200px;
+    border: #54687c solid 4px;
+}
+
+.linkCatalogo {
+    font-size: 25px;
+    text-shadow: rgb(39, 39, 39) 2px 2px;
+    margin: 50px 0 10px 20px;
+}
+
+.linkCatalogo a {
+    background: #34495e96;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+/*-----------------------------------------MEDIA QUERIES---------------------------------------------------*/
+/*Celulares*/
+
+@media (max-width: 768px) {
+    /*CSS GENERICO*/
+    nav {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu li a {
+        font-size: 18pt;
+        font-weight: 500;
+    }
+    
+    .menu2 {
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    
+    .menu2 li a {
+        font-size: 15pt;
+        font-weight: 500;
+    }
+    
+    .logo {
+        font-size: 40px; 
+    }
+
+    aside a img {
+        display: flex;
+        width: 340px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    footer {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+/*GALERIA INDEX*/
+
+    .contenedorGeneral {
+        margin: 0 5px 0 10px;
+    }
+
+    .tituloIndex {
+        font-size: 18pt;
+        margin-bottom: 10px;
+    }
+
+    #parrafoRegistro {
+        margin: 25px 10px 0 10px;
+        font-size: 20pt;
+        
+    }
+    
+    #btnRegistro {
+        padding: 5px;
+        margin: 20px 0 0 125px;
+    }
+    
+    #confirmarRegistro {
+        font-size: 15pt;
+        font-weight: 500;
+        margin: 20px 0 20px 100px;
+        
+    }
+
+/*CSS TRIVIA*/
+
+    .contenedor {
+        width: 300px;
+    }
+    
+    #trivia {
+        background-color: #34495E;
+        padding-bottom: 60px;
+        width: 100%;
+        border-radius: 2%;
+        color: #fff;
+        text-align: center;
+        text-shadow: rgb(27, 27, 27) 2px 2px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    
+    #trivia > h1 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    .pregunta {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .respuesta div {
+        padding: 10px 0 0 0;
+        font-size: 20px;
+    }
+    
+    .respuesta {
+        padding: 0px 0 10px 0px;
+    }
+    
+    .respuesta div {
+        padding-bottom: 15px;
+        border-top: 2px solid grey;
+    }
+
+
+/*CSS VOTACIÓN*/
+
+    .textoPrincipal{
+        font-size: 18px;
+        margin: 50px 10px 30px 10px;
+    }
+
+    .textoPrincipal span {
+        font-size: 20pt;
+    }
+
+    .formEstilo {
+        margin: 10px;
+    }
+
+    .categoríasForm {
+        font-size: 10pt;
+        font-weight: 600;
+        text-shadow: rgb(39, 39, 39) 2px 2px;
+        margin: 5px;
+    }
+
+    .tamanioInput{
+        width: 340px;
+    }
+
+    .btnCargar {
+        font-size: 8pt;
+        font-weight: 600;
+    }
+
+    .tituloSecundario {
+        font-size: 17pt;
+        font-weight: 600;
+    }
+
+    .tablaPeliculas {
+        width: 300px;
+        height: auto;
+        border: #34495E solid 3px;
+        background-color: #8da8c4;
+        margin: 50px 0 100px 5px;
+        text-align: center;
+    }
+
+    .tablaPeliculas tr th {
+        font-size: 10pt;
+        border: #34495E solid 3px;
+        padding: 4px;
+        color: #34495E;
+    }
+
+    .col-1 {
+        flex: 0 0 auto;
+        width: 8.3333333333%;
+    }
+
+    .col-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+    }
+
+    .respuestas {
+        color: rgb(48, 48, 48);
+    }
+
+    .botonBorrar {
+        font-size: 8pt;
+        border-radius: 8px;
+    }
+
+    .parrafoFinal {
+        color: white;
+        text-shadow: rgb(39, 39, 39) 3px 3px;
+        font-size: 13pt;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+/*CSS CATEGORIAS*/
+
+    .listaCategorias {
+        width: 250px;
+        height: auto;
+        padding: 1px;
+        margin: 30px 10px 0 60px;
+    }
+
+    .listaCategorias a {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+    .btnCategoriaPelis {
+        font-size: 12pt;
+        margin: 15px;
+        padding: 10px;
+
+    }
+    
+    .btnCategoriaSeries {
+        font-size: 12pt;
+        margin: 15px;
+        padding: 10px;
+    }
+
+/*CATEGORÍAS GÉNERO*/
+
+    .titulosGeneros {
+        font-size: 20pt;
+    }
+
+    .textoGenero {
+        font-size: 15pt;
+    }
+    
+    .caratulasGenero {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        border: #34495E solid 6px;
+        padding: 5px;
+        width: 90%;
+        height: auto;
+    }
+    
+    .caratulasGenero img {
+        width: 100px;
+        height: 150px;
+        border: #54687c solid 2px;
+    }
+    
+    .linkCatalogo {
+        font-size: 20px;
+        margin: 50px 0 10px 70px;
+    }
+    
+
+}
+
+
+/*Tablets*/
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    /*CSS GENERICO*/
+    nav {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu li a {
+        font-size: 19pt;
+        font-weight: 500;
+    }
+    
+    .menu2 {
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    
+    .menu2 li a {
+        font-size: 17pt;
+        font-weight: 500;
+    }
+    
+    .logo {
+        transform: translateX(20px);
+        font-size: 40px; 
+    }
+
+    aside a img {
+        display: flex;
+        width: 600px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    footer {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+/*GALERIA INDEX*/
+
+    .contenedorGeneral {
+        margin: 0 10px 0 10px;
+    }
+
+    .tituloIndex {
+        font-size: 25pt;
+        margin-bottom: 30px;
+    }
+
+    #parrafoRegistro {
+        margin: 25px 10px 0 10px;
+        font-size: 25pt;
+        
+    }
+    
+    #btnRegistro {
+        padding: 10px;
+        margin: 30px 0 0 440px;
+    }
+    
+    #confirmarRegistro {
+        font-size: 15pt;
+        font-weight: 500;
+        margin: 20px 0 20px 420px;
+        
+    }
+
+/*CSS TRIVIA*/
+
+    .contenedor {
+        width: 600px;
+    }
+    
+    #trivia {
+        background-color: #34495E;
+        padding-bottom: 60px;
+        width: 100%;
+        border-radius: 2%;
+        color: #fff;
+        text-align: center;
+        text-shadow: rgb(27, 27, 27) 2px 2px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    
+    #trivia > h1 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    .pregunta {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .respuesta div {
+        padding: 10px 0 0 0;
+        font-size: 20px;
+    }
+    
+    .respuesta {
+        padding: 0px 0 10px 0px;
+    }
+    
+    .respuesta div {
+        padding-bottom: 15px;
+        border-top: 2px solid grey;
+    }
+
+
+/*CSS VOTACIÓN*/
+
+    .textoPrincipal{
+        font-size: 20pt;
+        margin: 50px 10px 30px 20px;
+    }
+
+    .textoPrincipal span {
+        font-size: 30pt;
+    }
+
+    .formEstilo {
+        margin: 20px;
+    }
+
+    .categoríasForm {
+        font-size: 15pt;
+        font-weight: 600;
+        margin: 5px;
+    }
+
+    .tamanioInput{
+        width: 800px;
+    }
+
+    .btnCargar {
+        font-size: 12pt;
+        font-weight: 600;
+    }
+
+    .tituloSecundario {
+        font-size: 25pt;
+        font-weight: 600;
+    }
+
+    .tablaPeliculas {
+        width: 800px;
+        height: auto;
+        border: #34495E solid 3px;
+        background-color: #8da8c4;
+        margin: 50px 0 100px 15px;
+        text-align: center;
+    }
+
+    .tablaPeliculas tr th {
+        font-size: 15pt;
+        border: #34495E solid 3px;
+        padding: 5px;
+        color: #34495E;
+    }
+
+    .col-1 {
+        flex: 0 0 auto;
+        width: 8.3333333333%;
+    }
+
+    .col-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+    }
+
+    .respuestas {
+        color: rgb(48, 48, 48);
+    }
+
+    .botonBorrar {
+        font-size: 10pt;
+        border-radius: 8px;
+    }
+
+    .parrafoFinal {
+        color: white;
+        text-shadow: rgb(39, 39, 39) 3px 3px;
+        font-size: 15pt;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+/*CSS CATEGORIAS*/
+
+    .listaCategorias {
+        text-shadow: rgb(39, 39, 39) 3px 3px;
+        width: 400px;
+        height: auto;
+        padding: 1px;
+        margin: 100px 10px 100px 320px;
+    }
+
+    .listaCategorias a {
+        text-align: center;
+        margin-left: 120px;
+    }
+
+    .btnCategoriaPelis {
+        font-size: 20pt;
+        margin: 15px;
+        padding: 10px;
+
+    }
+    
+    .btnCategoriaSeries {
+        font-size: 20pt;
+        margin: 15px;
+        padding: 10px;
+    }
+
+/*CATEGORÍAS GÉNERO*/
+
+    .titulosGeneros {
+        font-size: 25pt;
+    }
+
+    .textoGenero {
+        font-size: 20pt;
+    }
+    
+    .caratulasGenero {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        border: #34495E solid 8px;
+        padding: 15px;
+        width: 95%;
+        height: auto;
+    }
+    
+    .caratulasGenero img {
+        width: 150px;
+        height: 200px;
+        border: #54687c solid 4px;
+    }
+    
+    .linkCatalogo {
+        font-size: 20px;
+        margin: 0 0 10px 70px;
+    }
+    
+
+}
+
+
+
+
+
+
+

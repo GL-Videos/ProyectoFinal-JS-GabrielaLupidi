@@ -1,0 +1,41 @@
+[
+    {
+        "categoria":"Acción"
+    },
+    {
+        "categoria":"Aventura"
+    },
+    {
+        "categoria":"Animada"
+    },
+    {
+        "categoria":"Bélica"
+    },
+    {
+        "categoria":"Ciencia Ficción"
+    },
+    {
+        "categoria":"Comedia"
+    },
+    {
+        "categoria":"Documental"
+    },
+    {
+        "categoria":"Drama"
+    },
+    {
+        "categoria":"Musical"
+    },
+    {
+        "categoria":"Romanticas"
+    },
+    {
+        "categoria":"Suspenso"
+    },
+    {
+        "categoria":"Terror"
+    },
+    {
+        "categoria":"Thriller"
+    }
+]
